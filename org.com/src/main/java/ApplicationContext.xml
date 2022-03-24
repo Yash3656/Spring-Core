@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+<bean id="personBean" class="org.com.springcore.Person">
+<property name="name" value="Yash Agrawal"/>
+</bean>
+<bean id="employeeBean" class="org.com.springcore.Employee" parent="personBean">
+<property name="employeeAge" value="21" />
+<property name="employeeContactNo" value="9850482337"/>
+</bean>
+</beans>
+
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+<bean id="personBean" class="org.com.springcore.Person">
+<property name="name" value="AMEN"/>
+</bean>
+<bean id="employeeBean" class="org.com.springcore.Employee" parent="personBean">
+<property name="employeeNumber" value="178230" />
+</bean>
+</beans>
+
+-->
+
+<!-- 
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+<bean id="personBean" class="org.com.springcore.Person">
+<property name="name" value="Yash Agrawal"/>
+</bean>
+<bean id="employeeBean" class="org.com.springcore.Employee" parent="personBean">
+<property name="employeeNumber" value="1111" />
+</bean>
+</beans>
+-->
